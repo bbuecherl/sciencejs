@@ -1,0 +1,29 @@
+{
+  "name": "sciencejs",
+  "version": "0.1.0",
+  "description": "maths framework for javascript",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbuecherl/sciencejs.git"
+  },
+  "keywords": [
+    "math"
+  ],
+  "author": "Bernhard Bücherl <bernhard.buecherl@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bbuecherl/sciencejs/issues"
+  },
+  "homepage": "https://github.com/bbuecherl/sciencejs#readme",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5"
+  }
+}
