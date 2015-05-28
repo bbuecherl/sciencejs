@@ -1,4 +1,4 @@
-var science = require("./index");
+var science = require("./dist/science");
 
 var x = science.Zeros(2,2,2);
 

@@ -1,20 +1,19 @@
 // generate and export global module namespace
-const science = module.exports = {};
+var science = module.exports = {};
 // generate private namespace
-const _ = {
+var _ = {
   CONFIG: {},
-  INTERNAL: {}
+  INTERNAL: {},
+  STRUCTURE: {}
 };
 // get utilities
-const utils = require("./lib/utils");
+var utils = require("./lib/utils");
 
-// require types
-require("./lib/types")(science, _, utils);
-
-// require exceptions
-require("./lib/exceptions")(science, _, utils);
-
-// require libraries
+// require core functions
 require("./lib/core")(science, _, utils);
-require("./lib/env")(science, _, utils);
-require("./lib/cell")(science, _, utils);
+
+// require structures
+require("./lib/structures")(science, _, utils);
+
+// load public methods
+require("./lib/methods")(science, _, utils);
